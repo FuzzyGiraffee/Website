@@ -28,7 +28,12 @@
     
     <script>
         const app = document.getElementById("app")
-        const webamp = new Webamp();
+        const webamp = new Webamp({
+                initialSkin:{
+                    url:"https://fuzzygiraffee.github.io/Website/Media/Asuka_of_Neon_Genesis_Evangelion_.wsz"
+                }
+            }
+        );
         webamp.renderWhenReady(app);
     </script>   
 </body>
