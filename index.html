@@ -10,20 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
 </head>
 <body>
- 
+    
    
-    <audio loop autoplay>
-        <source src="./Media/PleaseILoveYou.mp3" type="audio/mpeg">
-    </audio>
    <video autoplay muted loop id="myVideo">
         <source src="./Media/Bitwig-edited.webm" type="video/webm">
         
     </video>
     <div class="header">
+        <div id="summer">Summer</div>
         <div id="social">Social</div>
         <div id="music">Music</div>
-        <div id="summer">Summer</div>
         <div id="about">About</div>
+        
     </div>
+    <div id="app"></div>
+    <script src="https://unpkg.com/webamp"></script>
+    
+    <script>
+        const app = document.getElementById("app")
+        const webamp = new Webamp();
+        webamp.renderWhenReady(app);
+    </script>   
 </body>
 </html>
